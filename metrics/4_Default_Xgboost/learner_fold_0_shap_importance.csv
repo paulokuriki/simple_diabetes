@@ -1,0 +1,9 @@
+feature,shap_importance
+Glucose,1.1252326
+BMI,0.6648209
+DiabetesPedigreeFunction,0.46092117
+Age,0.39787245
+Pregnancies,0.23037297
+Insulin,0.17939019
+BloodPressure,0.1593815
+SkinThickness,0.12462973

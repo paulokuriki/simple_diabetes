@@ -1,0 +1,167 @@
+{
+    "uid": "ed5b1449-4e90-4b45-9a55-ef1e15e74aea",
+    "name": "3_Linear",
+    "preprocessing": [
+        {
+            "scale": [
+                {
+                    "scale": [
+                        3.3376486642977534,
+                        32.11441777446784,
+                        20.360146812374676,
+                        16.224552724531765,
+                        112.42199949428587,
+                        8.066530895462545,
+                        11.927731767105794
+                    ],
+                    "mean": [
+                        3.8211805555555554,
+                        120.13541666666667,
+                        68.81597222222223,
+                        20.416666666666668,
+                        77.42361111111111,
+                        31.769618055555554,
+                        33.49305555555556
+                    ],
+                    "var": [
+                        11.139898606288577,
+                        1031.3358289930557,
+                        414.53557822145063,
+                        263.2361111111111,
+                        12638.705970293211,
+                        65.06892068745178,
+                        142.27078510802468
+                    ],
+                    "n_samples_seen": 576,
+                    "n_features_in": 7,
+                    "columns": [
+                        "Pregnancies",
+                        "Glucose",
+                        "BloodPressure",
+                        "SkinThickness",
+                        "Insulin",
+                        "BMI",
+                        "Age"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "Pregnancies": [
+                        "scale_normal"
+                    ],
+                    "Glucose": [
+                        "scale_normal"
+                    ],
+                    "BloodPressure": [
+                        "scale_normal"
+                    ],
+                    "SkinThickness": [
+                        "scale_normal"
+                    ],
+                    "Insulin": [
+                        "scale_normal"
+                    ],
+                    "BMI": [
+                        "scale_normal"
+                    ],
+                    "Age": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.0.2",
+            "algorithm_name": "Logistic Regression",
+            "algorithm_short_name": "Linear",
+            "uid": "81516004-3e7a-4e71-adb4-d2cfdf972b6d",
+            "params": {
+                "model_type": "Linear",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 1235,
+                "explain_level": 2
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_steps": 1,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "Pregnancies": [
+                    "scale_normal"
+                ],
+                "Glucose": [
+                    "scale_normal"
+                ],
+                "BloodPressure": [
+                    "scale_normal"
+                ],
+                "SkinThickness": [
+                    "scale_normal"
+                ],
+                "Insulin": [
+                    "scale_normal"
+                ],
+                "BMI": [
+                    "scale_normal"
+                ],
+                "Age": [
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "binary_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_2/X.data",
+            "y_path": "AutoML_2/y.data",
+            "results_path": "AutoML_2"
+        },
+        "learner": {
+            "model_type": "Linear",
+            "ml_task": "binary_classification",
+            "n_jobs": -1,
+            "seed": 1235,
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "binary_classification",
+        "explain_level": 2,
+        "name": "3_Linear",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "3_Linear/learner_fold_0.linear"
+    ],
+    "predictions_fname": "3_Linear/predictions_validation.csv",
+    "metric_name": "logloss",
+    "final_loss": 0.47221320857175764,
+    "train_time": 3.685513973236084,
+    "is_stacked": false,
+    "threshold": 0.5092513588663645
+}

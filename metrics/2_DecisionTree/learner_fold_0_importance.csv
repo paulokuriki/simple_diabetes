@@ -1,0 +1,9 @@
+feature,mean_importance
+DiabetesPedigreeFunction,-0.011212211209405454
+Pregnancies,0.0
+BloodPressure,0.0
+SkinThickness,0.0
+Insulin,0.0
+Age,0.07695844035526614
+BMI,0.12408922266304748
+Glucose,0.144293433107135

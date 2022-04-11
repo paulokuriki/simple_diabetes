@@ -1,0 +1,16 @@
+if (Glucose <= 127.5) and (Age <= 28.5) and (BMI <= 45.05) then class: 0 (proba: 93.3%) | based on 194 samples
+
+if (Glucose <= 127.5) and (Age > 28.5) and (BMI > 26.35) then class: 0 (proba: 59.56%) | based on 136 samples
+
+if (Glucose > 127.5) and (BMI > 29.95) and (DiabetesPedigreeFunction > 0.3) then class: 1 (proba: 80.0%) | based on 115 samples
+
+if (Glucose > 127.5) and (BMI <= 29.95) and (Glucose <= 161.5) then class: 0 (proba: 74.47%) | based on 47 samples
+
+if (Glucose > 127.5) and (BMI > 29.95) and (DiabetesPedigreeFunction <= 0.3) then class: 0 (proba: 51.43%) | based on 35 samples
+
+if (Glucose <= 127.5) and (Age > 28.5) and (BMI <= 26.35) then class: 0 (proba: 96.97%) | based on 33 samples
+
+if (Glucose > 127.5) and (BMI <= 29.95) and (Glucose > 161.5) then class: 1 (proba: 64.29%) | based on 14 samples
+
+if (Glucose <= 127.5) and (Age <= 28.5) and (BMI > 45.05) then class: 1 (proba: 100.0%) | based on 2 samples
+
